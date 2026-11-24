@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1vw;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+.sidebar {
+    width: 15.3%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw 0.5vw 0;
+}
+
+.logo {
+    width: 8.5vw;
+    margin-left: 0.7vw;
+    margin-bottom: 1.6vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    padding: 0.7vw;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 1.5vw;
+    height: 1.5vw;
+    object-fit: contain;
+}
+
+.menu-item span {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #282828;
+}
+
+.menu-item:hover {
+    background-color: #282828;
+}
+
+.playlist-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5vw;
+}
+
+.favorites {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 0.7vw;
+    margin-top: 1.5vw;
+}
+
+.favorites p {
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.favorites p:hover {
+    color: #1db954;
+}
+
+.install {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    padding: 0.7vw;
+    margin-top: auto;
+    margin-bottom: 0.5vw;
+    cursor: pointer;
+}
+
+.install img {
+    width: 1.4vw;
+}
+
+.install span {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.main {
+    flex: 1;
+    min-width: 0;
+    background: linear-gradient(#232323, #121212 65%);
+    padding: 1vw 2.1vw;
+    overflow-y: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    width: 5.3vw;
+    cursor: pointer;
+}
+
+.user {
+    width: 7.7vw;
+    cursor: pointer;
+}
+
+.morning {
+    margin-top: 2.8vw;
+}
+
+.morning h1 {
+    font-size: 2vw;
+    margin-bottom: 1.4vw;
+}
+
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw 2%;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+    width: 23.5%;
+    height: 5.3vw;
+    background-color: #303030;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.playlist img {
+    width: 5.3vw;
+    height: 5.3vw;
+    object-fit: cover;
+}
+
+.playlist h4 {
+    font-size: 1vw;
+    padding: 1.1vw;
+    line-height: 1.4;
+}
+
+.playlist:hover {
+    background-color: #444444;
+}
+
+.shows {
+    margin-top: 2.6vw;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4vw;
+}
+
+.section-title h2 {
+    font-size: 1.5vw;
+}
+
+.section-title a {
+    color: #b3b3b3;
+    font-size: 0.9vw;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-title a:hover {
+    text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+    background-color: #181818;
+    padding: 1vw;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.2vw;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.1vw;
+    font-weight: normal;
+    margin-bottom: 0.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card p {
+    color: #b3b3b3;
+    font-size: 0.9vw;
+}
+
+.card:hover {
+    background-color: #282828;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #181818;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vw;
+    padding: 0.6vw;
+    border-top: 1px solid #282828;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 25%;
+}
+
+.song-cover {
+    width: 4vw;
+    height: 4vw;
+}
+
+.song-name h4 {
+    font-size: 1vw;
+    font-weight: normal;
+    margin-bottom: 0.2vw;
+}
+
+.song-name p {
+    font-size: 0.8vw;
+    color: #b3b3b3;
+}
+
+.heart {
+    width: 1.2vw;
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.player-controls img {
+    width: 75%;
+    cursor: pointer;
+}
+
+.right-options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    padding-right: 1vw;
+}
+
+.right-options img {
+    width: 65%;
+    cursor: pointer;
+}
+
+.device {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #1ed760;
+    color: black;
+    height: 1.5vw;
+    padding-right: 6vw;
+}
+
+.device span {
+    font-size: 0.9vw;
+    font-weight: bold;
+}

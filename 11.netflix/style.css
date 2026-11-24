@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+}
+
+.banner {
+    height: 55vw;
+    background-image: linear-gradient(transparent 75%, #141414), url("assets/Title-Image.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2vw 3.7vw;
+    background: linear-gradient(#00000060, transparent);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.logo {
+    width: 6.3vw;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+.nav-links a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.nav-links .active {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b3b3b3;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.4vw;
+}
+
+.header-right img {
+    width: 1.4vw;
+    cursor: pointer;
+}
+
+.header-right .profile {
+    width: 2.3vw;
+}
+
+.header-right .down-arrow {
+    width: 0.9vw;
+    margin-left: -0.7vw;
+}
+
+.banner-content {
+    margin-left: 4.5vw;
+    margin-top: 23vw;
+}
+
+.show-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+
+.show-label img {
+    width: 1.3vw;
+}
+
+.show-label span {
+    font-size: 1.2vw;
+    font-weight: bold;
+    letter-spacing: 0.4vw;
+}
+
+.banner-content h1 {
+    font-size: 10vw;
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.1vw;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 0.9vw 1.3vw;
+    border: none;
+    border-radius: 4px;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons img {
+    width: 1.2vw;
+}
+
+.play-button {
+    background-color: white;
+    color: black;
+}
+
+.play-button:hover {
+    background-color: #cccccc;
+}
+
+.info-button {
+    background-color: #808080a0;
+    color: white;
+}
+
+.info-button:hover {
+    background-color: #808080;
+}
+
+.add-button {
+    width: 1.8vw;
+    position: absolute;
+    right: 1vw;
+    bottom: 8vw;
+    cursor: pointer;
+}
+
+.main {
+    position: relative;
+    margin-top: -6.5vw;
+    padding-left: 4.5vw;
+    padding-right: 0.8vw;
+}
+
+.movie-section {
+    margin-bottom: 4.2vw;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.7vw;
+    margin-bottom: 1.4vw;
+}
+
+.section-title h2 {
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+.section-title img {
+    width: 0.8vw;
+    cursor: pointer;
+}
+
+.movie-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.1vw;
+}
+
+.movie-row img {
+    width: 19%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.top-movies {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    overflow: hidden;
+}
+
+.top-movie {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 17vw;
+    height: 13vw;
+}
+
+.rank {
+    width: 9.5vw;
+    height: 13vw;
+    object-fit: contain;
+}
+
+.poster {
+    width: 9.2vw;
+    height: 13vw;
+    margin-left: -1.7vw;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 64%;
+    margin: 4.5vw auto 0;
+    padding-bottom: 2.5vw;
+    color: #808080;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.4vw;
+    margin-bottom: 1.5vw;
+}
+
+.social-icons img {
+    width: 1.7vw;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+}
+
+.footer-column a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.service-button {
+    background-color: transparent;
+    border: 1px solid #808080;
+    color: #808080;
+    padding: 0.8vw 1vw;
+    font-size: 0.9vw;
+    margin-top: 1.5vw;
+    cursor: pointer;
+}
+
+.service-button:hover {
+    color: white;
+}
+
+.copyright {
+    font-size: 0.8vw;
+    margin-top: 1.5vw;
+}
